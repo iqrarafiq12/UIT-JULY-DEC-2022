@@ -1,0 +1,170 @@
+body {
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.border-black {
+  border: 2px solid black;
+}
+
+.border-red {
+  border: 2px solid #fff;
+}
+
+.header-1,
+.header-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.no-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-links,
+.header-plans {
+  display: flex;
+  align-items: center;
+}
+
+.header-links a,
+.header-plans a {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.header-plans a {
+  background-color: red;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.link-pro {
+  background-color: #616161 !important;
+  color: #fff !important;
+}
+
+.link-pink {
+  width: 100px;
+  text-align: center;
+  background-color: #ffc0c7 !important;
+}
+
+.link-yellow {
+  width: 100px;
+  text-align: center;
+  background-color: #fff4a3 !important;
+}
+
+.link-green {
+  width: 100px;
+  text-align: center;
+  background-color: #059862 !important;
+  color: #fff !important;
+}
+
+.down-arrow {
+  font-size: 10px;
+}
+
+/* main body */
+.container-of-mainbody {
+  width: 1260px;
+  height: 700px;
+  background-color: #101b38;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  padding-top: 130px;
+  font-size: 70px;
+  line-height: 0rem;
+}
+
+h2 {
+  color: #ffc0c7;
+  font-size: 15px;
+  text-align: center;
+}
+
+.searchbar {
+  width: 500px;
+  height: 28px;
+  border-radius: 80px;
+  border: 1px solid #101b38;
+  margin-left: 370px;
+
+  padding: 3px;
+}
+
+i {
+  width: 100px;
+  height: 19px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: #059862;
+  margin-left: -100px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  font-size: 16px;
+}
+.anker-tag{
+  padding-top: 10px;
+  color: #fff;
+}
+/* FOOTER */
+.container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -300px;
+
+
+}
+
+.col a {
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  background-color: #ffc0c7;
+  border-radius: 5px;
+  text-decoration: none;
+ margin: 10px;
+}
+
+.col-1 a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 120px;
+}
+
+.container2 {
+  display: flex;
+justify-content: flex-end;
+margin-top: 10px;
+}
+
+#col1  {
+  background-color: #101b38;
+  color: #fff;
+  margin: 3px;
+  padding: 3px;
+  text-align: center;
+}
+.container3{
+  margin-top: -20px;
+}
+.col3 p{
+  color: #fff;
+  text-align: center;
+}
+
+#icon {
+margin-left: 570px;
+color: #fff;
+background-color: #101b38;
+font-size: 45px;+++++++++++++++++++++++++
+}

@@ -1,0 +1,19 @@
+body{
+    margin: 20;
+    padding: 20;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #BFACE0;
+}
+.box{
+    background-color: #645CAA;
+    width: 1080px;
+    height: 100px;
+    margin-left: 100px;
+    border: 10px solid #BFACE0;
+}
+h1{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}

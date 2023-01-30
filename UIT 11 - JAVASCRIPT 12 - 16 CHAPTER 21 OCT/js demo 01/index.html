@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAYS </title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">ARRAYS</h1>
+    <!-- TASK THREE -->
+    <h2>3) The new Array() Constructor</h2>
+    <P>The Array() constructor creates Array objects. You can declare an array with the "new" keyword to instantiate the
+        array in memory.<BR> Here’s how you can declare new Array() constructor:
+
+        <br>let x = new Array(); - an empty array
+        <br>let x = new Array(10,20,30); - three elements in the array: 10,20,30
+        <br>let x = new Array(10); - ten empty elements in array: ,,,,,,,,,
+        <br>let x = new Array('10'); - an array with 1 element: ‘10’
+    </P>
+
+    <h3>5) declare and initialize a boolean in array on javascript</h3>
+    <p>Boolean array with all true values</p>
+    <button onclick="bool()">Click Here</button>
+    <div id="root"></div>
+
+    <!-- TASK SEVEN -->
+    <H2>TASK SEVEN </H2>
+    <p id="percentages"></p>
+
+    <!-- TASK EIGHT -->
+
+    <!-- TASK NINE  -->
+    <h2> TASK NINE </h2>
+    <script>
+        /* TASK ONE */
+        /*declare an empty array using js literal notation to store student names in future*/
+        /* Create Empty Array */
+        var student = [];
+        /* Creating an array with four elements. */
+        var student = ["Ali", "Safina", "Waqar", "Wahida"];
+        console.log(student);
+
+        /* TASK TWO */
+        /*declare an empty array using js literal notation to store student names in future*/
+        var arr1 = new Array(2).fill({ key: 'value' });
+
+        // [{key: 'value'}, {key: 'value'}]
+        console.log(arr1);
+
+        /* TASK THREE */
+        let arr = ["1", "2", "3"];
+        console.log(arr);
+
+        /* TASK FOUR */
+        let array = [
+            "1",
+            "2",
+            "3"
+        ];
+        console.log(array);
+
+        /* TASK FIVE */
+        function bool() {
+            //initializing an array named "myarray" with a length of 5
+            const myarray = new Array(5).fill(true)
+            document.getElementById('root').innerHTML = "[" + myarray + "]"
+        }
+
+        /* TASK SIX */
+        var MixArr = [1, "Mixed", 2, "Array"];
+        console.log(MixArr);
+
+        /* TASK SEVEN */
+        student[0] = "SSC";
+        student[1] = "HSC";
+        student[2] = "BS";
+        student[3] = "BCOM";
+        student[4] = "BFS";
+        student[5] = "M.PHIL";
+        student[6] = "PHD";
+        document.getElementById('percentages').innerText = student;
+
+        /* TASK EIGHT  */
+        function percentage(num, per) {
+            return (num / 100) * per;
+        }
+
+        console.log(percentage(1000, 47.12));
+
+        /* TASK NINE */
+        // Creating variables
+        var color1 = "Red";
+        var color2 = "Green";
+        var color3 = "Blue";
+        console.log(color1 + color2 + color3);
+        // Printing variable values
+        document.write(color1 + "<br>");
+        document.write(color2 + "<br>");
+        document.write(color3);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> EVENTS </title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <h1>EVENTS CHAPTER 43 - 48 </h1>
+    <!-- TASK 01 | Show an alert box on click on a link. -->
+    <a href="https://colorhunt.co/" onclick="alert('Welcome to The Color Hunt World!');">MOBILE PHONE LOCKEUP</a>
+    <!-- TASK 02 | Display some Mobile images in browser. On click on an
+image Show the message in alert to user. -->
+    <div class="container-1">
+        <div class="col">
+            <img src="./m-2.png" width="200px" onclick="alert('2022 FAMOUS MODELS!');">
+        </div>
+        <div class="col">
+            <img src="./m-01.jpg" width="500px" onclick="alert('2022 FAMOUS MODELS!');">
+        </div>
+        <div class="col">
+            <img src="./m-3.png" width="300px" onclick="alert('2022 FAMOUS MODELS!');">
+        </div>
+    </div>
+    <!-- TASK 03 | Display 10 student records in table and each row should contain a delete
+button. If you click on a button to delete a record, entire row should be
+deleted. -->
+<!-- I SEARCHING ON THE GOOGLE THEN I WRITE THE CODE WITH THE HELP OF THE SEARCHING  -->
+    <div id="wrapper">
+        <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+            <tr>
+                <th>Name</th>
+                <th>Country</th>
+                <th>Age</th>
+            </tr>
+
+            <tr id="row1">
+                <td id="name_row1">Ali</td>
+                <td id="country_row1">Pakistan</td>
+                <td id="age_row1">20</td>
+                <td>
+                    <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+                    <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+                    <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+                </td>
+            </tr>
+
+            <tr id="row2">
+                <td id="name_row2">Rabia</td>
+                <td id="country_row2">Turkey</td>
+                <td id="age_row2">18</td>
+                <td>
+                    <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+                    <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+                    <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+                </td>
+            </tr>
+
+            <tr id="row3">
+                <td id="name_row3">Zimr</td>
+                <td id="country_row3">Soudia Arabia</td>
+                <td id="age_row3">19</td>
+                <td>
+                    <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+                    <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+                    <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="new_name"></td>
+                <td><input type="text" id="new_country"></td>
+                <td><input type="text" id="new_age"></td>
+                <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+            </tr>
+
+        </table>
+    </div>
+    <!--  -->
+    <div class="forth-section">
+        <img src="./m-4.png" width="200px">
+    </div>
+
+    <!-- TASK 05 | Show a counter in browser. Counter should increase on click on increase
+button and decrease on click on decrease button. And show updated counter
+value in browser. -->
+<div class="container">
+    <div id="increment-count">
+      <input type="image" id="up-arrow" src="./up-arrow.jpg" />
+    </div>
+    <div id="total-count">
+    </div>
+    <div id="decrement-count">
+      <input type="image" id="down-arrow" src="./down-arrow.jpg" />
+    </div>
+</div>
+
+</body>
+
+</html>

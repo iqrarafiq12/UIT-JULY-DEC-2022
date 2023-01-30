@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #083AA9;
+    border: 10px solid #fff;
+    width: 1260px;
+    height: 690px;
+}
+
+h1 {
+    background-color: #fff;
+    font-size: 40px;
+    width: 1240px;
+    height: 120px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-top: -50px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 400px;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    line-height: -2cm;
+}
+
+h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+}

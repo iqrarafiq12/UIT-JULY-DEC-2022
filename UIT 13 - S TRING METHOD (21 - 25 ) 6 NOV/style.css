@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 1160px;
+    height: 50px;
+    background-color: #ababab;
+    margin-left: 50px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    color: #fff;
+}

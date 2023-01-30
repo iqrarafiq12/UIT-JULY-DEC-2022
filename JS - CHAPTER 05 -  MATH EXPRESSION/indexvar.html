@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MATH EXPRESSIONS </title>
+</head>
+
+<body style="background-color: rgb(240, 193, 193);">
+    <h1>Task 01</h1>
+    <p>Sum Of 3 + 5 = </p>
+    <p id="sum"></p>
+    <p>Divide Of Numbers 5 / 8 = </p>
+    <p id="devide"></p>
+    <p>Minus Of Numbers 5 - 10 = </p>
+    <p id="Minus"></p>
+    <p>Multiply Of Numbers 8 * 6 = </p>
+    <p id="Multiply"></p>
+    <p>Modulud Of Numbers 5 % 3 = </p>
+    <p id="Modulus"></p>
+
+
+    <!-- Task 2 -->
+<h1>Task 02</h1>
+
+    <h2>A) Declare a variable.</h2>
+    <p>Wherever you can use a number, you can use a math expression. For example, you're
+        familiar with this kind of statement.
+        <a href=""> <br>var popularNumber = 4;</a>
+        <br>But you can also write this.
+        <a href=""> <br> var popularNumber = 2 + 2;</a>
+        <br> You can also write:
+        <a href=""> <br>alert(2 + 2);</a>
+    </p>
+<h1>Task 03</h1>
+    <h2>B) Show the value of variable in your browser like “Value
+        after variable declaration is: ??”.</h2>
+    <p>This displays the messge "4" in an alert box.
+        When it sees a math expression, JavaScript always does the math and delivers the result.
+        Here's a statement that subtracts 24 from 12, assigning -12 to the variable.
+        <a href=""> var popularNumber = 12 - 24;</a>
+        This one assigns the product of 3 times 12, 36, to the variable.
+        <a href=""> var popularNumber = 3 * 12; </a>
+    </p>
+
+    <h2>C) Initialize the variable with some number.</h2>
+    <p>In this one, the number 10 is assigned to a variable. Then 1 is added to the variable, and
+        the sum, 210, is assigned to a second variable.
+        As usual, you can mix variables and numbers.</p>
+
+    <h2>D) Show the value of variable in your browser like “Initial
+        value: 5”.</h2>
+    <p id="initial"></p>
+
+    <h2>E) Increment the variable.</h2>
+    <p>The increment operator (++) increments (adds one to) its operand and returns the value before or after the
+        increment, depending on where the operator is placed.</p>
+
+    <h2>F) Show the value of variable in your browser like “Value
+        after increment is: 6”.</h2>
+    <p>Show the value of variable in your browser like “Value afterincrement is: 6”.g.Add 7 </p>
+
+    <h2>G) Add 7 to the variable.</h2>
+    <P id="variable"></P>
+
+    <h2>H)Value After addition</h2>
+    <p id="value"></p>
+
+    <h2>I) Decalre the variable</h2>
+   
+    <h1> Task 04</h1>
+    <!-- 4rth TAsk -->
+    <h2> Cost of one movie ticket is 800 PKR. Write a script to
+        store
+        ticket price in a variable & calculate the cost of buying 5
+        tickets
+        to a movie. Example output:</h2>
+        <p >Totel Cost Buy 5 Tickets to a movie is</p>
+    <p id="totel"></p>
+
+    <h1>Task 05</h1>
+
+    <!-- This table & Price Checkout code i check out on the website -->
+
+    <h1> JavaScript - Function to display Table Of An Entered Number.</h1>
+    <p><input type="text" id="txtNumber" placeholder="Enter Number"> </p>
+    <p><input type="button" value="Print Table." onclick="printTable()"> </p>
+    <!--Print Number-->
+    <p id="pPrint"></p>
+    
+    <h1>Task 07</h1>
+    <form>
+        <div class="mb-3">
+            <label for="inputProductPrice" class="form-label">Product Price</label>
+            <input type="text" class="form-control" id="inputProductPrice" oninput="myFunction()" >
+        </div>
+        <div class="mb-3">
+            <label for="inputGST" class="form-label">GST</label>
+            <input type="number" class="form-control" id="inputGST" oninput="myFunction()">
+        </div>
+        <div class="mb-3">
+            <label for="inputDelivery" class="form-label">Delivery Charge</label>
+            <input type="number" class="form-control" id="inputDelivery" oninput="myFunction()">
+        </div>
+        <hr>
+    
+    
+        <h4>Total Price: <span id="totalPrice">0</span></h4>
+    </form>
+
+    <h1>Task 08</h1>
+    <h2>Students Marks Calculations Systems - JavaScript</h2>
+    <form name="form1">
+        <b>Enter Marks 1:</b><input type="textbox" name="txtNum1"></br>
+        <b>Enter Marks 2:</b><input type="textbox" name="txtNum2"></br>
+        <b>Enter Marks 3:</b><input type="textbox" name="txtNum3"></br>
+        <input type="button" value="calculate" onclick="Calculate()">
+    </form>
+
+    <script>
+        /* sum of numbers - 01 */
+        var Sum = 3;
+        var number = 5;
+        document.getElementById("sum").innerText = Sum + number;
+
+        /* Devide of numbers - 02 */
+        var number = 5;
+        var numbers = 8;
+        document.getElementById("devide").innerText = number / numbers;
+
+        /* Minus of numbers - 03 */
+        var number = 5;
+        var numbers = 10;
+        document.getElementById("Minus").innerText = number - numbers;
+
+        /* Multiply of numbers - 03 */
+        var number = 8;
+        var numbers = 6;
+        document.getElementById("Multiply").innerText = number * numbers;
+
+        /* Modulus of numbers - 03 */
+        var number = 5;
+        var numbers = 3;
+        document.getElementById("Modulus").innerText = number % numbers;
+
+        /* Initial */
+        var name = '';
+        var price = 5;
+        var car = {};
+        document.getElementById("initial").innerText = name + price + car;
+
+        /* Increment Oprator */
+        let x = 3;
+        const y = x++;
+        console.log('x:${x}, y:${y}');
+        // expected output : "x:4, y:3"//
+        let a = 3;
+        const b = ++a;
+        console.log('a:${a}, b:${b}');
+        // expected output: "a:4, b:4"//
+
+        /* add 7 to your variable */
+        var number = 7;
+        var numbers = 10;
+        document.getElementById("variable").innerText = number + numbers;
+
+        /* addition */
+        var value = 20;
+        var addition = 7;
+        document.getElementById("value").innerText = value + addition;
+
+        /* Declare the variable */
+        var name = Iqra;
+        let lastName = Rafiq;
+        const age = 21;
+    
+/* Tickes */
+
+           
+            /* Table */
+            function printTable(){
+                var num;
+                num = Number(document.getElementById("txtNumber").value);
+                for(var i = 1; i <= 10; i++){
+                    var pTag = document.getElementById("pPrint");
+                    pTag.innerHTML += num * i + "<br/>";
+                }
+            }
+            /* Price Checkout */
+            function myFunction() {
+        var price = document.getElementById("inputProductPrice").value;
+        var gst = document.getElementById("inputGST").value;
+        var delivery = document.getElementById("inputDelivery").value;
+        var total = +price + +gst + +delivery;
+        document.getElementById("totalPrice").innerHTML = total;
+         
+    }
+    /* calculator*/
+    var A;
+    var B; 
+    var c; 
+    var result=0;
+    var avg=0
+    function Calculate(){
+        A=parseInt(form1.txtNum1.value);
+        B=parseInt(form1.txtNum2.value);
+        c=parseInt(form1.txtNum3.value);
+        result=a+b+c;
+avg = result/3;
+ 
+document.write("The Total is  :"+ "<B>" + result  +  "<B>" + "</br>");
+ 
+document.write("The Avg is  :"+ "<B>" + avg  +  "<B>" + "</br>");
+ 
+if(avg > 50)
+{
+    document.write("The Grade is  :"+ "<B>" + "Pass"  +  "<B>" );
+ 
+}
+else
+{
+    document.write("The Grade is  :"+ "<B>" + "Fail"  +  "<B>" );
+}
+}
+    
+    </script>
+</body>
+
+</html>

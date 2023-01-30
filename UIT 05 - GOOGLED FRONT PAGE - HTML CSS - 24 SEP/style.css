@@ -1,0 +1,123 @@
+body {
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    background-color: #222222;
+}
+.container-header{
+    width: 1220px;
+    height: 50px;
+    justify-content: flex-end;
+    display: flex;
+}
+.container-header a{
+    text-decoration: none;
+    margin: 10px;
+    color: #8B7E74;
+}
+.logo{
+    margin-top: -12px;
+    color: #8B7E74;
+    font-size: 40px;
+}
+.container-main-section{
+    width: 1220px;
+    height: 100px;
+    justify-content: center;
+    margin-top: 150px;
+}
+.container-main-section h1{
+    font-size: 90px;
+    font-weight: bold;
+    text-align: center;
+    color: #8B7E74;
+    line-height: 3rem;
+}
+.searchbar{
+    width: 550px;
+    height: 40px;
+    border-radius: 80px;
+background-color: #222222;
+border: 1px solid #8B7E74;
+   margin-left: 340px;
+   margin-top: -250px;
+}
+#search-logo{
+    color: #8B7E74;
+    margin-left: -530px;
+}
+#search-logo:hover{
+    color: #8B7E74;
+}
+#microphone-logo{
+color: #8B7E74;
+    margin-left: -30px;
+}
+#microphone-logo:hover{
+    color: #8B7E74;
+}
+.container{
+    margin-left: 350px;
+}
+.button1{
+    width: 150px;
+    height: 25px;
+    background-color: #8B7E74;
+    border: 1px solid #222222;
+    color: #222222;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+.button2{
+    width: 150px;
+    height: 25px;
+    color: #222222;
+    background-color: #8B7E74;
+    border: 1px solid #222222;
+    margin-left: 5px;
+}
+h2{
+    font-size: 15px;
+    color: #eeeee4;
+    margin-left: 130px;
+    font-weight: 100;
+}
+a{
+    text-decoration: none;
+    color: rgb(203, 203, 227);
+    margin-left: 10px;
+}
+
+/* FOOTER SECTION */
+.container-3{
+    width: 1200px;
+    height: 35px;
+    background-color: #434242;
+    margin-left: 40px;
+    border-radius: 5px;
+border-bottom: 1px solid #8B7E74;
+}
+h3 a{
+    font-size: 12px;
+}
+.container-4{
+    width: 1200px;
+    height: 35px;
+    background-color: #434242;
+    margin-left: 40px;
+    margin-top: 5px;
+    border-radius: 5px;
+border-top: 1px solid #8B7E74;
+}
+.footer-links{
+    font-size: 12px;
+}
+.container-5{
+    margin-top: -20px;
+margin-left: 1000px;
+}
+.end{
+    display: inline-block;
+    font-size: 12px;
+}

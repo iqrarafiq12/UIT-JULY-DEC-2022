@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="box">
+        <h1>CHAPTER 06 TO 09 </h1>
+    </div>
+    <!-- Q 01 -->
+    <h2>TASK ONE </h2>
+    <h4>Write a program to take a number in a variable, do the
+        required arithmetic to display the following result in your
+        browser:</h4>
+    <p>1) The + Operator </p>
+    <p id="addition"></p>
+
+    <!-- Q 02 -->
+    <p>2) The - Operator</p>
+    <p id="Minus"></p>
+
+    <!-- Q 03 -->
+    <p>2) The / Operator</p>
+    <p id="Division"></p>
+    <!-- Q 04-->
+    <p>3) The % Operator</p>
+    <p id="modulus"></p>
+
+    <!-- TASK 02 -->
+    <h2>Task 02</h2>
+    <p>What will be the output in variables a, b & result after
+        execution of the following script:
+        <br>var a = 2, b = 1;
+       <br> var result = --a - --b + ++b + b--;
+       <br> Explain the output at each stage:
+        <br>--a;
+        <br>--a - --b;
+        <br>--a - --b + ++b;
+        <br>--a - --b + ++b + b--;</p>
+<p>J is = </p>
+        <p id="Demo"></p>
+        <p>L is = </p>
+        <p id="demo"></p>
+        <p>The Result is = </p>
+        <p id="demostry"></p>
+
+        <!-- TASK 06 B, C , D -->
+        
+        <div class="background">
+            <div class="container">
+              <div class="screen">
+                <div class="screen-body">
+                  <div class="screen-body-item left">
+                    <div class="app-title">
+                      <div class="animated infinite pulse">
+                        Student <br> Grade <br> Calcy
+                      </div>
+                    </div>
+                  </div>
+                  <div class="screen-body-item">
+                    <div class="app-form">
+                      <div class="app-form-group">
+                        <input type="text" class="app-form-control" placeholder="WEB PROGRAMMING" id="wd">
+                      </div>
+                      <div class="app-form-group">
+                        <input  type="text"  class="app-form-control"   placeholder="MATHS" id="maths">
+                      </div>
+                       <div class="app-form-group">
+                        <input  type="text"  class="app-form-control"   placeholder="COMPUTER" id="comp">
+                      </div>
+                      <div class="app-form-group">
+                        <input  type="text"  class="app-form-control"   placeholder="PHYSICS" id="phy" >
+                      </div>
+                      <div > 
+                        <input type="button" name="" value="showPercentage" class="app-form-button" onclick="calcy()">
+                      </div>            
+                    </div>
+                </div>
+          
+              </div>
+                <div class="app-form-group showdata">
+                        <p id="showData" >  </p>
+               </div>
+            </div>
+          </div>
+    <script>
+        /* Q 01 */
+        let x = 100 + 50;
+        document.getElementById("addition").innerHTML = x;
+
+
+        /* Q 02 */
+        let a = 5;
+        let b = 9;
+        let c = a - b;
+        document.getElementById("Minus").innerHTML = c;
+
+        /* Q 03 */
+        let d = 7;
+        let e = 6;
+        let f = d / e;
+        document.getElementById("Division").innerHTML = f;
+
+        /* Q 04 */
+        let g = 8;
+        let h = 7;
+        let i = g % h;
+        document.getElementById("modulus").innerHTML = i;
+
+        /* Q 05 */
+        let j = 5;
+        x--;
+        let k = j;
+        document.getElementById("Demo").innerText = k;
+
+        /* Q 06 */
+        let l = 5;
+document.getElementById("demo").innerHTML = l ** 2;
+
+/* Q 07 */
+let m = 5;
+let n = 5;
+        x--;
+        let p = m ** n;
+        document.getElementById("demostry").innerHTML =  p;
+
+        /* Q 05*/
+
+
+        var message = "Welcome To The Land Of , ";
+ var userName = "WEbSite";
+ var banger = "!";
+ var customMess = message + userName + banger;
+ alert(customMess);
+
+ /* Q 06 A  */
+ var FN = prompt ("First Name");
+ var LN = prompt("Last Name");
+ var age = prompt(" age ");
+ if (+ age > 20){
+    alert("Eligible");
+ }
+/* Q 06 B, C, D */
+const calcy = () =>{
+  let wd = document.getElementById('wd').value;
+  let maths = document.getElementById('maths').value;
+  let comp = document.getElementById('comp').value;
+  let phy = document.getElementById('phy').value;
+  let grades = "";
+
+
+  let totalGrades = parseFloat(wd) + parseFloat(maths) + parseFloat(comp) + parseFloat(phy);
+  alert(totalGrades);
+
+  let perc = (totalGrades/400) * 100;
+  alert(perc);
+
+  debugger;
+
+  if(perc <= 100  && perc >= 80){
+    grades = 'A';
+  }else if(perc <= 79  && perc >= 60){
+     grades = 'B';
+  }else if(perc <= 59  && perc >= 40){
+     grades = 'C';
+  }else{
+     grades = 'F';
+  }
+
+  if(perc >= 39.5){
+    document.getElementById('showData').innerHTML = ` Out of 400 your total is  ${totalGrades} and percentage is ${perc}%. <br> Your grade is ${grades}. You are Pass. `
+  }
+  else{
+    document.getElementById('showData').innerHTML = ` Out of 400 your total is  ${totalGrades} and percentage is ${perc}%. <br> Your grade is ${grades}. You are Fail. `
+  }
+
+  
+}
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS </title>
+    <script src="./scriptjs"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>CHAPTER - EVETS | 49 TO 52</h1>
+    <!-- Q.03 |In previous assignment you have created a tabular data
+using javascript. Let’s modify that. Create a form which
+takes student’s details and show each student detail in
+table. Each row of table must contain a delete button and
+an edit button. On click on delete button entire row should
+be deleted. On click on edit button, a hidden form will
+appear with the values of that row. -->
+    <div id="wrapper">
+        <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+            <tr>
+                <th>Name</th>
+                <th>Country</th>
+                <th>Age</th>
+            </tr>
+
+            <tr id="row1">
+                <td id="name_row1">Aleena Mujahid</td>
+                <td id="country_row1">Pakistan</td>
+                <td id="age_row1">20</td>
+                <td>
+                    <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+                    <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+                    <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+                </td>
+            </tr>
+
+            <tr id="row2">
+                <td id="name_row2">Aasil Ali</td>
+                <td id="country_row2">Saudia Arabia</td>
+                <td id="age_row2">22</td>
+                <td>
+                    <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+                    <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+                    <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+                </td>
+            </tr>
+
+            <tr id="row3">
+                <td id="name_row3">Adan Zahra</td>
+                <td id="country_row3">Pakistan</td>
+                <td id="age_row3">19</td>
+                <td>
+                    <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+                    <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+                    <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="new_name"></td>
+                <td><input type="text" id="new_country"></td>
+                <td><input type="text" id="new_age"></td>
+                <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+            </tr>
+
+        </table>
+    </div>
+    <!--  Q.02 | Suppose in your webpage there is content area in which
+you have entered your item details, but user can only see
+some details on first look. When user clicks on “Read
+more” button, full detail of that particular item will be
+displayed. -->
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi
+        lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas
+            nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc
+            sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed
+            ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum.
+            Sed dapibus pulvinar nibh tempor porta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            repellendus ratione quasi iure non amet, fuga nobis voluptas consectetur corrupti dicta quia eius?
+            Veritatis, culpa. Id sed libero vitae in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            dolor quas tempore iure, quibusdam et suscipit tempora quisquam ad dolores incidunt saepe vitae cumque culpa
+            dolorum error deserunt eligendi ab Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quis
+            similique, iure hic doloribus enim incidunt cumque necessitatibus tempora aperiam, eius nam, pariatur rem
+            doloremque totam quisquam suscipit quas quod. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
+            odio voluptatem, a aut voluptates saepe ea laborum est. Pariatur deserunt fuga in earum aut impedit nobis
+            consequatur asperiores! Obcaecati, repudiandae?</span></p>
+    <button onclick="myFunction()" id="myBtn">Read more</button><br>
+    <!-- Q. 01 |  -->
+    <br>
+
+
+
+
+    <form>
+
+        <input type="text" name="Name" id="txtName" placeholder="Name">
+        <input type="text" name="Email" id="txtEmail" placeholder="Email">
+        <input type="button" value="Submit" id="btnSubmit" onclick="testVariable()">
+    </form>
+    <div>
+        <p id="p1"></p>
+        <p id="p2"></p>
+    </div>
+</form>
+</body>
+
+</html>

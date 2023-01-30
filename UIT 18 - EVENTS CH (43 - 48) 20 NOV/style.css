@@ -1,0 +1,61 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 30px;
+    color:  #393E46;
+    text-align: center;
+}
+col{
+    text-align: center;
+}
+.container-1{
+    display: flex;
+    justify-content: center;
+}
+P{
+    margin-left: 50px;
+    font-size: 25px;
+    color: blue;
+}
+a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #393E46;
+    margin-left: 50px;
+}
+.forth-section {
+    overflow: hidden;
+    margin: 0 auto;
+    
+}
+
+.forth-section img {
+    width: 500px;
+    transition: 0.5s all ease-in-out;
+    margin-top: 20px;
+    margin-left: 350px;
+}
+
+.forth-section:hover img {
+    transform: scale(1.5);
+}
+/* TASK 05 */
+#up-arrow,#down-arrow{
+    width: 100px;
+    height: 100px;
+  }
+  #total-count{
+    font-weight: 900;
+    font-size: 70px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
